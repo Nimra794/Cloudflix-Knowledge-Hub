@@ -99,7 +99,7 @@
 <!-- landing14:04-->
 <head>
     <!-- Basic need -->
-    <title>Films::Register</title>
+    <title>C-Flix::Register</title>
     <meta charset="UTF-8">
     <meta content="" name="description">
     <meta content="" name="keywords">

@@ -2,7 +2,7 @@
 <aside id="leftsidebar" class="sidebar">
     <ul class="nav nav-tabs">
         <li class="nav-item"><a class="nav-link active" href="/"><i
-                        class="zmdi zmdi-home m-r-5"></i>Films</a></li>
+                        class="zmdi zmdi-home m-r-5"></i>Flix</a></li>
         <li class="nav-item"><a class="nav-link active" href="{{route('dashboard.admins.edit', auth()->guard('admin')->user())}}"><i class="zmdi zmdi-account-box m-r-5"></i>Profile</a>
         </li>
     </ul>
@@ -67,7 +67,7 @@
 
                     @if(auth()->guard('admin')->user()->hasPermission('read_films'))
                         <li>
-                            <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-movie"></i><span>Films</span>
+                            <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-movie"></i><span>BrainFilms</span>
                             </a>
                             <ul class="ml-menu">
                                 <li><a href="{{route('dashboard.films.index')}}">All Films</a></li>

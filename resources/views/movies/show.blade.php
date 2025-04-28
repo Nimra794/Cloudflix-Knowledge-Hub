@@ -12,7 +12,7 @@
         </style>
     @endpush
 
-    <div class="hero mv-single-hero" style="background: url('{{$film->background_cover}}') no-repeat">
+    <div class="hero mv-single-hero" style="background: url('{{$film->background_cover}}') no-repeat; background-position: center; background-size: cover;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

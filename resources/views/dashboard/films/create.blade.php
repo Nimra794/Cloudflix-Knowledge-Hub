@@ -13,14 +13,14 @@
             <div class="row">
                 <div class="col-lg-7 col-md-5 col-sm-12">
                     <h2>Add Film
-                        <small>Welcome to Films</small>
+                        <small>Welcome to Cloud-Flix Hub</small>
                     </h2>
                 </div>
                 <div class="col-lg-5 col-md-7 col-sm-12">
                     <ul class="breadcrumb float-md-right">
                         <li class="breadcrumb-item"><a href="{{ url('dashboard') }}"><i class="zmdi zmdi-home"></i>
-                                Films</a></li>
-                        <li class="breadcrumb-item"><a href="javascript:void(0);">Films</a></li>
+                            BrainFilms</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">BrainFilms</a></li>
                         <li class="breadcrumb-item active">Add</li>
                     </ul>
                 </div>
@@ -108,8 +108,8 @@
                                 <div class="row clearfix">
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <textarea name="api_url" rows="4" class="form-control no-resize"
-                                                      placeholder="API URL">{{ old('api_url', '') }}</textarea>
+                                            <input name="api_url" rows="4" type="hidden" value="123" class="form-control no-resize"
+                                                      placeholder="API URL" />
                                             <span style="color: red; margin-left: 10px">{{ $errors->first('api_url') }}</span>
                                         </div>
                                     </div>
@@ -119,8 +119,9 @@
                                     <div class="fileinput fileinput-new" data-provides="fileinput">
                                         <div class="fileinput-new thumbnail"
                                              style="width: 200px; height: 150px;">
-                                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image"
-                                                 alt=""/>
+                                             <img src="{{ isset($model) && $model->background_cover ? asset('uploads/' . $model->background_cover) : 'http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image' }}" alt=""/>
+
+
                                         </div>
                                         <div class="fileinput-preview fileinput-exists thumbnail"
                                              style="max-width: 200px; max-height: 150px;">
@@ -145,8 +146,8 @@
                                     <div class="fileinput fileinput-new" data-provides="fileinput">
                                         <div class="fileinput-new thumbnail"
                                              style="width: 200px; height: 150px;">
-                                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image"
-                                                 alt=""/>
+                                             <img src="{{ isset($model) && $model->background_cover ? asset('uploads/' . $model->background_cover) : 'http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image' }}" alt=""/>
+
                                         </div>
                                         <div class="fileinput-preview fileinput-exists thumbnail"
                                              style="max-width: 200px; max-height: 150px;">

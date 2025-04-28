@@ -11,7 +11,7 @@
 
 <head>
     <!-- Basic need -->
-    <title>Films</title>
+    <title>C-Flix Hub</title>
     <meta charset="UTF-8">
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -71,7 +71,7 @@
                     </li>
                     <li class="dropdown first">
                         <a class="btn btn-default lv1" href="/movies">
-                            movies
+                           Insightful-movies
                         </a>
                     </li>
                     <li class="dropdown first">
@@ -117,7 +117,7 @@
                     <option {{request()->search_category == 'movies' ? 'selected' : ''}} value="movies">Movies</option>
                     <option {{request()->search_category == 'actors' ? 'selected' : ''}} value="actors">Actors</option>
                 </select>
-                <input name="search" value="{{request()->search}}" placeholder="Search for a movie, TV Show or celebrity that you are looking for" type="text">
+                <input name="search" value="{{request()->search}}" placeholder="Discover Stories, Uncover Knowledge" type="text">
                 <button type="submit" style="background-color: #dd003f!important; color: white; font-weight: bold; padding: 11px 25px">Search</button>
             </form>
         </div>
@@ -177,7 +177,7 @@
     <div class="ft-copyright">
         <div class="ft-left">
             <p><a href="" target="_blank"></a>Made with <i class="ion-ios-heart" style="color: red"></i> by <span
-                        style="color: orangered">Abdullah Shublaq</span></p>
+                        style="color: orangered">Nimra Bashir</span></p>
         </div>
         <div class="backtotop">
             <p><a href="#" id="back-to-top" style="color: #dd003f; font-weight: bold">Back to top <i

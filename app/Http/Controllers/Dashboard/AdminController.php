@@ -67,8 +67,9 @@ class AdminController extends Controller
         ]);
 
         if ($request->avatar) {
-            $attributes['avatar'] = $request->avatar->store('admin_avatars');
+            $attributes['avatar'] = $request->avatar->store('admin_avatars', 'public');
         }
+
 
         $admin = Admin::create([
             'name' => $attributes['name'],
@@ -132,13 +133,16 @@ class AdminController extends Controller
         ]);
 
         if ($request->avatar) {
+            // Delete old avatar
             $adminAvatar = $admin->getAttributes()['avatar'];
-            if (isset($adminAvatar) && $adminAvatar) {
-                Storage::delete($adminAvatar);
+            if ($adminAvatar && Storage::disk('public')->exists($adminAvatar)) {
+                Storage::disk('public')->delete($adminAvatar);
             }
 
-            $attributes['avatar'] = $request->avatar->store('admin_avatars');
+            // Upload new avatar
+            $attributes['avatar'] = $request->avatar->store('admin_avatars', 'public');
         }
+
         if ($request->password) {
             $attributes['password'] = bcrypt($attributes['password']);
         } else {

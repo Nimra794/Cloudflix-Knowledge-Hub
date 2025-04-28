@@ -13,7 +13,8 @@
             <div class="row">
                 <div class="col-lg-7 col-md-5 col-sm-12">
                     <h2>All Films
-                        <small class="text-muted">Welcome to Films</small>
+                        <small class="text-muted">WElCOME TO C-FLIX HUB
+                        </small>
                     </h2>
                 </div>
                 <div class="col-lg-5 col-md-7 col-sm-12">
@@ -32,9 +33,9 @@
                         </button>
                     @endif
                     <ul class="breadcrumb float-md-right">
-                        <li class="breadcrumb-item"><a href="{{url('dashboard')}}"><i class="zmdi zmdi-home"></i> Films</a>
+                        <li class="breadcrumb-item"><a href="{{url('dashboard')}}"><i class="zmdi zmdi-home"></i> BrainFilms</a>
                         </li>
-                        <li class="breadcrumb-item"><a href="javascript:void(0);">Films</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">BrainFilms</a></li>
                         <li class="breadcrumb-item active">All Films</li>
                     </ul>
                 </div>

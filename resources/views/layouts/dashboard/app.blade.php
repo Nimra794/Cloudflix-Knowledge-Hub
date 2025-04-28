@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
-    <title>Films</title>
+    <title>C-Flix Hub
+        
+
+    </title>
     <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon"> <!-- Favicon-->
 
     @stack('styles')
@@ -39,7 +42,8 @@
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="bars"></a>
                 <a class="navbar-brand" href=""><img src="{{asset('favicon.ico')}}" width="30"
-                                                     alt="Oreo"><span class="m-l-10">Films</span></a>
+                                                     alt="Oreo"><span class="m-l-10">C-FLIX HUB
+                                                        </span></a>
             </div>
         </li>
         <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="zmdi zmdi-swap"></i></a>

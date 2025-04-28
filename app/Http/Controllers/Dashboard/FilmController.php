@@ -93,8 +93,8 @@ class FilmController extends Controller
             'actors' => 'required|array|max:10|exists:actors,id'
         ]);
 
-        $attributes['background_cover'] = $request->background_cover->store('film_background_covers');
-        $attributes['poster'] = $request->poster->store('film_posters');
+        $attributes['background_cover'] = $request->background_cover->store('film_background_covers', 'public');
+        $attributes['poster'] = $request->poster->store('film_posters', 'public');
 
         $film = Film::create([
             'name' => $attributes['name'],
@@ -135,6 +135,8 @@ class FilmController extends Controller
         $categories = Category::all();
         $actors = Actor::all();
         return view('dashboard.films.edit', compact('film', 'categories', 'actors'));
+       
+        
     }
 
     /**
@@ -161,11 +163,11 @@ class FilmController extends Controller
 
         if ($request->background_cover) {
             Storage::delete($film->getAttributes()['background_cover']);
-            $attributes['background_cover'] = $request->background_cover->store('film_background_covers');
+            $attributes['background_cover'] = $request->background_cover->store('film_background_covers', 'public');
         }
         if ($request->poster) {
             Storage::delete($film->getAttributes()['poster']);
-            $attributes['poster'] = $request->poster->store('film_posters');
+            $attributes['poster'] = $request->poster->store('film_posters', 'public');
         }
 
         $film->update($attributes);

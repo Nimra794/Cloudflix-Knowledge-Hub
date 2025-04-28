@@ -71,8 +71,8 @@ class ActorController extends Controller
             'background_cover' => 'required|image',
         ]);
 
-        $attributes['avatar'] = $request->avatar->store('actor_avatars');
-        $attributes['background_cover'] = $request->background_cover->store('actor_background_covers');
+        $attributes['avatar'] = $request->avatar->store('actor_avatars', 'public');
+        $attributes['background_cover'] = $request->background_cover->store('actor_background_covers', 'public');
 
         $actor = Actor::create([
             'name' => $attributes['name'],
@@ -131,11 +131,11 @@ class ActorController extends Controller
 
         if ($request->avatar) {
             Storage::delete($actor->getAttributes()['avatar']);
-            $attributes['avatar'] = $request->avatar->store('actor_avatars');
+            $attributes['avatar'] = $request->avatar->store('actor_avatars', 'public');
         }
         if ($request->background_cover) {
             Storage::delete($actor->getAttributes()['background_cover']);
-            $attributes['background_cover'] = $request->background_cover->store('actor_background_covers');
+            $attributes['background_cover'] = $request->background_cover->store('actor_background_covers', 'public');
         }
 
         $actor->update($attributes);

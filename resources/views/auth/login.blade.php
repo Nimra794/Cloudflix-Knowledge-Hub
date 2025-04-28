@@ -92,7 +92,7 @@
 <!-- landing14:04-->
 <head>
     <!-- Basic need -->
-    <title>Films::Login</title>
+    <title>C-Flix::Login</title>
     <meta charset="UTF-8">
     <meta content="" name="description">
     <meta content="" name="keywords">

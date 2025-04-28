@@ -1,7 +1,7 @@
 @extends('layouts.web.app')
 @section('content')
 
-<div class="hero hero3" style="background: url('{{$actor->background_cover}}') no-repeat">
+<div class="hero hero3" style="background: url('{{$actor->background_cover}}') no-repeat; background-position: center; background-size: cover;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
