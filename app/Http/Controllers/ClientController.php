@@ -31,7 +31,7 @@ class ClientController extends Controller
                 Storage::delete($clientAvatar);
             }
 
-            $attributes['avatar'] = $request->avatar->store('client_avatars');
+            $attributes['avatar'] = $request->avatar->store('client_avatars','public');
         }
 
         $user->update($attributes);

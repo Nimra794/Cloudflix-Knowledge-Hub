@@ -9338,7 +9338,8 @@ header .navbar-default .navbar-nav {
 
 header .navbar-default .navbar-nav li a {
     font-family: 'Dosis', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
+    
     color: #abb7c4;
     font-weight: bold;
     text-transform: uppercase;
@@ -9975,15 +9976,4 @@ footer.full-width-ft .ft-copyright {
 .menu-hover a:hover {
     color: #dcf836 !important;
 }
-
-
-
-
-
-
-
-
-
-
-
 

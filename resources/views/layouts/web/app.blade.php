@@ -17,6 +17,7 @@
     <meta content="" name="keywords">
     <meta content="" name="author">
     <link href="#" rel="profile">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     @stack('style')
 
@@ -29,6 +30,7 @@
     <!-- CSS files -->
     <link href="{{asset('web_files/css/plugins.css')}}" rel="stylesheet">
     <link href="{{asset('web_files/css/style.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
@@ -230,6 +232,8 @@
 @endif
 
 @stack('script')
+
+@include('components.chat-button')
 
 </body>
 
