@@ -47,3 +47,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/user/review/{film}', 'ReviewController@store');
     Route::delete('/user/review/{film}', 'ReviewController@destroy');
 });
+
+Route::get('/chatbot', 'ChatbotController@index')->name('chatbot.index');
+Route::post('/chatbot/send', 'ChatbotController@sendMessage')->name('chatbot.send');
