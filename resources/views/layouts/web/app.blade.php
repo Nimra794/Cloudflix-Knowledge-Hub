@@ -115,10 +115,7 @@
         <!-- top search form -->
         <div class="top-search">
             <form action="/search" method="GET">
-                <select name="search_category">
-                    <option {{request()->search_category == 'movies' ? 'selected' : ''}} value="movies">Movies</option>
-                    <option {{request()->search_category == 'actors' ? 'selected' : ''}} value="actors">Actors</option>
-                </select>
+               
                 <input name="search" value="{{request()->search}}" placeholder="Discover Stories, Uncover Knowledge" type="text">
                 <button type="submit" style="background-color: #dd003f!important; color: white; font-weight: bold; padding: 11px 25px">Search</button>
             </form>

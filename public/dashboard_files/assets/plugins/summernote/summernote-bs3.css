@@ -4856,6 +4856,7 @@ ul {
 .movie-items .movie-item {
     position: relative;
     margin-right: 30px;
+
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -4873,17 +4874,22 @@ ul {
 }
 
 .movie-items .movie-item .mv-img:after {
-    box-shadow: inset -5px -50px 100px -15px #000000;
-    -webkit-box-shadow: inset -5px -50px 100px -15px #000000;
-    -moz-box-shadow: inset -5px -50px 100px -15px #000000;
-    -o-box-shadow: inset -5px -50px 100px -15px #000000;
-    position: absolute;
+    box-shadow: inset -5px -50px 100px -15px rgba(0, 0, 0, 0);
+-webkit-box-shadow: inset -5px -50px 100px -15px rgba(0, 0, 0, 0);
+-moz-box-shadow: inset -5px -50px 100px -15px rgba(0, 0, 0, 0);
+-o-box-shadow: inset -5px -50px 100px -15px rgba(0, 0, 0, 0);
+
+
     top: 0;
     left: 0;
+
     bottom: 0;
-    width: 100%;
-    height: 100%;
+    width: 220px;
+    height: 300px;
+
     content: "";
+
+
 }
 
 .movie-items .movie-item img {
@@ -5172,7 +5178,7 @@ ul {
     background-color: #dd003f;
     padding: 8px 15px;
     text-align: center;
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 110px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -5349,7 +5355,7 @@ ul {
     position: absolute;
     margin-left: 50%;
     text-align: right;
-    right: 15px;
+    right: 60px;
     width: 50%;
     position: inherit;
     margin-bottom: 60px;
@@ -5557,11 +5563,12 @@ ul {
     color: #abb7c4;
     font-weight: bold;
     text-transform: uppercase;
-    margin-right: 10px;
+    margin-right: 60px;
 }
 
 .title-hd a.viewall i {
     margin-left: 5px;
+
 }
 
 .title-hd a.viewall:hover {
@@ -5701,7 +5708,7 @@ ul {
 }
 
 .tabs ul.tabs-mv {
-    padding: 20px 0;
+
     margin-bottom: 30px;
 }
 
@@ -7818,7 +7825,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+
 }
 
 .celebrity-items .ceb-item {
@@ -7841,7 +7848,7 @@ ul {
 
 .celebrity-items .ceb-item h2 a {
     font-family: 'Dosis', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: #ffffff;
     font-weight: 700;
     text-transform: none;
@@ -8187,7 +8194,8 @@ p.ceb-single {
     width: 430px;
     padding: 50px;
     border: 1px solid #e1e1e1;
-    height: auto;
+    height: 250px;
+
     background-color: #ffffff;
 }
 

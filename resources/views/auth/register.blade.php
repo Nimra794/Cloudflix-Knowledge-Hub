@@ -127,9 +127,10 @@
     </div>
 </div>
 
-<div class="landing-hero" style="padding-top: 50px">
+<div class="landing-hero" style="padding-top: 5px">
 
-    <div style="margin-bottom: 50px">
+    <div style="margin-bottom: -100px">
+        
         <img alt="Logo" src="{{asset('web_files/images/logo1.png')}}">
     </div>
     <div class="container">

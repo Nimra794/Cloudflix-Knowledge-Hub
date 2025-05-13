@@ -34,7 +34,8 @@
                     <div class="celebrity-items">
                         @foreach($actors as $actor)
                             <div class="ceb-item">
-                                <a href="{{url('actors/' . $actor->name)}}"><img src="{{$actor->avatar}}" style="height: 250px;" alt=""></a>
+                                <a href="{{url('actors/' . $actor->name)}}"><img src="{{$actor->avatar}}" style="height: 200px;" alt=""></a>
+                                
                                 <div class="ceb-infor">
                                     <h2><a href="{{url('actors/' . $actor->name)}}">{{$actor->name}}</a></h2>
                                     <span>actor</span>

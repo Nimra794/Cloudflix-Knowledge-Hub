@@ -32,8 +32,10 @@
                     @foreach($sliderFilms as $film)
                         <div class="movie-item">
                             <div class="mv-img">
-                                <a href="#"><img alt="" height="437" style="height: 400px;" src="{{$film->poster}}"
-                                                 width="285"></a>
+                                <a href="#"><img alt="" height="400" style="height: 400px;" src="{{$film->poster}}"
+                                    
+                                                 width="280px"></a>
+
                             </div>
                             <div class="hvr-inner">
                                 <a href="{{url('movies/'.$film->id)}}"> Show <i
@@ -78,7 +80,9 @@
                                                 <div class="slide-it">
                                                     <div class="movie-item">
                                                         <div class="mv-img">
-                                                            <img alt="" src="{{$film->poster}}" style="height: 280px">
+                                                            <img alt="" src="{{$film->poster}}" style="height: 300px; width: 220px;">
+
+
                                                         </div>
                                                         <div class="hvr-inner">
                                                             <a href="{{url('movies/'.$film->id)}}"> Show <i

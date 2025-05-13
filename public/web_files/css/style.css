@@ -158,6 +158,8 @@ html {
 .row {
     margin-left: -15px;
     margin-right: -15px;
+    margin-top: 20px;
+
 }
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
@@ -4855,7 +4857,7 @@ ul {
 
 .movie-items .movie-item {
     position: relative;
-    margin-right: 30px;
+    margin-right: 70px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -4876,8 +4878,10 @@ ul {
     box-shadow: inset -5px -50px 100px -15px #000000;
     -webkit-box-shadow: inset -5px -50px 100px -15px #000000;
     -moz-box-shadow: inset -5px -50px 100px -15px #000000;
+
     -o-box-shadow: inset -5px -50px 100px -15px #000000;
-    position: absolute;
+
+
     top: 0;
     left: 0;
     bottom: 0;
@@ -5172,7 +5176,8 @@ ul {
     background-color: #dd003f;
     padding: 8px 15px;
     text-align: center;
-    margin-left: 30px;
+    margin-left: 50px;
+    
     margin-top: 110px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -5349,7 +5354,7 @@ ul {
     position: absolute;
     margin-left: 50%;
     text-align: right;
-    right: 15px;
+    right: 60px;
     width: 50%;
     position: inherit;
     margin-bottom: 60px;
@@ -5557,8 +5562,9 @@ ul {
     color: #abb7c4;
     font-weight: bold;
     text-transform: uppercase;
-    margin-right: 10px;
+    margin-right: 60px;
 }
+
 
 .title-hd a.viewall i {
     margin-left: 5px;
@@ -5701,7 +5707,7 @@ ul {
 }
 
 .tabs ul.tabs-mv {
-    padding: 20px 0;
+
     margin-bottom: 30px;
 }
 
@@ -7818,12 +7824,14 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+column-gap: 30px;
+
 }
 
 .celebrity-items .ceb-item {
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+
 }
 
 .celebrity-items .ceb-item img {
@@ -7841,7 +7849,8 @@ ul {
 
 .celebrity-items .ceb-item h2 a {
     font-family: 'Dosis', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
+
     color: #ffffff;
     font-weight: 700;
     text-transform: none;
@@ -8565,6 +8574,7 @@ p.ceb-single {
 
     .sliderv2 .slider-single-item {
         max-width: 300px;
+
         padding-top: 0;
     }
 
@@ -9975,3 +9985,7 @@ footer.full-width-ft .ft-copyright {
 .menu-hover a:hover {
     color: #dcf836 !important;
 }
+.ceb-item {
+    font-size: 12px;
+}
+
